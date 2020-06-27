@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/sohailalam2/markdown-extractor/compare/v0.2.2...v0.2.3) (2020-06-27)
+
+
+### Bug Fixes
+
+* add missing CheerioOptionsInterface, add badgets to readme ([d10e926](https://github.com/sohailalam2/markdown-extractor/commit/d10e926a81e3c3d48071a0965d7b57f44f06c0ec))
+
 ### [0.2.2](https://github.com/sohailalam2/markdown-extractor/compare/v0.2.1...v0.2.2) (2020-06-27)
 
 
