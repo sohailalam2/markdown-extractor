@@ -50,6 +50,8 @@ jobs:
         with:
           node-version: 12
           registry-url: 'https://registry.npmjs.org/'
+
+      - name: Publish to NPMJS
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
           npm config set scope "@sohailalam2"
@@ -67,7 +69,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@sohailalam2'
 
-      - name: Publish
+      - name: Publish to Github
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
