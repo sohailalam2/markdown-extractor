@@ -1,5 +1,24 @@
 import { MarkdownDomSelector } from './markdown-dom-selector';
 
+export interface CheerioOptionsInterface {
+  // Document References
+  // Cheerio https://github.com/cheeriojs/cheerio
+  // HTMLParser2 https://github.com/fb55/htmlparser2/wiki/Parser-options
+  // DomHandler https://github.com/fb55/DomHandler
+
+  xmlMode?: boolean;
+  decodeEntities?: boolean;
+  lowerCaseTags?: boolean;
+  lowerCaseAttributeNames?: boolean;
+  recognizeCDATA?: boolean;
+  recognizeSelfClosing?: boolean;
+  normalizeWhitespace?: boolean;
+  withStartIndices?: boolean;
+  withEndIndices?: boolean;
+  ignoreWhitespace?: boolean;
+  _useHtmlParser2?: boolean;
+}
+
 /**
  * Markdown Extractor config options
  *

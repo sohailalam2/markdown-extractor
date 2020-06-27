@@ -2,6 +2,8 @@
 
 [![npm](https://badgen.net/npm/v/@sohailalam2/markdown-extractor?icon=npm)](https://www.npmjs.com/package/@sohailalam2/markdown-extractor)
 [![github actions](https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master)](https://github.com/sohailalam2/markdown-extractor/actions)
+[![gzip size](https://badgen.net/badgesize/gzip/https://cdn.jsdelivr.net/npm/@sohailalam2/markdown-extractor/dist/bundle.min.js)](https://cdn.jsdelivr.net/npm/@sohailalam2/markdown-extractor/dist/bundle.min.js)
+[![install size](https://badgen.net/packagephobia/install/@sohailalam2/markdown-extractor?icon=packagephobia)](https://packagephobia.now.sh/result?p=@sohailalam2/markdown-extractor)
 [![snyk](https://snyk.io/test/npm/@sohailalam2/markdown-extractor/badge.svg)](https://snyk.io/test/npm/@sohailalam2/markdown-extractor)
 
 ## 📝 Description

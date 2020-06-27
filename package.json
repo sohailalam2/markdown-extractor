@@ -13,6 +13,7 @@
     "format": "npm run lint:fix && prettier --write \"src/**/*.ts\"",
     "lint": "eslint --ext .js,.ts src && tsc --project tsconfig.json",
     "lint:fix": "eslint --fix --ext .js,.ts src && tsc --project tsconfig.json",
+    "prerelease": "npm run lint && npm run test && npm run build",
     "release": "standard-version",
     "start:dev": "tsc -w",
     "test:clear": "jest --clearCache",
