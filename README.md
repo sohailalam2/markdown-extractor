@@ -1,6 +1,8 @@
 # Markdown Extractor 🔣
 
-![Build & Test](https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master)
+[![npm](https://badgen.net/npm/v/@sohailalam2/markdown-extractor?icon=npm)](https://www.npmjs.com/package/@sohailalam2/markdown-extractor)
+[![github actions](https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master)](https://github.com/sohailalam2/markdown-extractor/actions)
+[![snyk](https://snyk.io/test/npm/@sohailalam2/markdown-extractor/badge.svg)](https://snyk.io/test/npm/@sohailalam2/markdown-extractor)
 
 ## 📝 Description
 
@@ -11,6 +13,8 @@ Your one stop for parsing Markdown content. Give your markdown superpower by add
 - Parse markdown content. We use [marked](https://github.com/markedjs/marked)
 - Extract YAML metadata information about your markdown content. We use [js-yaml](https://github.com/nodeca/js-yaml)
 - Convert markdown to HTML and easily extract data from DOM nodes by passing selectors. We use [cheerio](https://github.com/cheeriojs/cheerio)
+- Support for both NodeJS and Browser
+- Browser standalone package also available at `dist/bundle.min.js`
 
 ## 💡 How does it work?
 
@@ -53,6 +57,8 @@ $ npm install @sohailalam2/markdown-extractor
 ```
 
 ## ✅ Usage
+
+Check [`example`](./example) for more information.
 
 Given the sample markdown content, lets see how we can parse it and extract the metadata information
 
@@ -132,6 +138,20 @@ const perks = content['#perks'];
 // <li>Awesome team</li>
 // <li>Freedom and responsibilities</li>
 // </ul>
+```
+
+## Standalone library in browser
+
+```html
+<script src="../dist/bundle.min.js"></script>
+
+<script>
+  // ...
+
+  const { metadata, content, html } = MarkdownExtractor.parseMarkdown(markdown, options);
+
+  // ...
+</script>
 ```
 
 ## 📌 Links

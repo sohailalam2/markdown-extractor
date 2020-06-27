@@ -39,5 +39,3 @@ This is the awesome _abstract_ for the **backend engineering** role. Visit https
 ## Other Details
 
 This is an **amazing** opportunity for _budding engineers_. Apply now!!
-
-Hell World <em onerror=alert('img')> WORLD!! </em>

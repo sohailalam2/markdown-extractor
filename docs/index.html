@@ -31,7 +31,9 @@
                    <div class="content-data">
 
 <h1 id="markdown-extractor-🔣">Markdown Extractor 🔣</h1>
-<p><img src="https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master" alt="Build &amp; Test" class="img-responsive"></p>
+<p><a href="https://www.npmjs.com/package/@sohailalam2/markdown-extractor"><img src="https://badgen.net/npm/v/@sohailalam2/markdown-extractor?icon=npm" alt="npm" class="img-responsive"></a>
+<a href="https://github.com/sohailalam2/markdown-extractor/actions"><img src="https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master" alt="github actions" class="img-responsive"></a>
+<a href="https://snyk.io/test/npm/@sohailalam2/markdown-extractor"><img src="https://snyk.io/test/npm/@sohailalam2/markdown-extractor/badge.svg" alt="snyk" class="img-responsive"></a></p>
 <h2 id="📝-description">📝 Description</h2>
 <p>Your one stop for parsing Markdown content. Give your markdown superpower by adding metadata.</p>
 <h2 id="🔧-features">🔧 Features</h2>
@@ -39,6 +41,8 @@
 <li>Parse markdown content. We use <a href="https://github.com/markedjs/marked">marked</a></li>
 <li>Extract YAML metadata information about your markdown content. We use <a href="https://github.com/nodeca/js-yaml">js-yaml</a></li>
 <li>Convert markdown to HTML and easily extract data from DOM nodes by passing selectors. We use <a href="https://github.com/cheeriojs/cheerio">cheerio</a></li>
+<li>Support for both NodeJS and Browser</li>
+<li>Browser standalone package also available at <code>dist/bundle.min.js</code></li>
 </ul>
 <h2 id="💡-how-does-it-work">💡 How does it work?</h2>
 <p>For example,</p>
@@ -63,6 +67,7 @@ Lorem ipsum dolor...</code></pre></div><p>would be parsed as</p>
 <p>NodeJs v12 or above. May work on lower version but not tested.</p>
 <h2 id="💻-installation">💻 Installation</h2>
 <div><pre class="line-numbers"><code class="language-bash">$ npm install &#64;sohailalam2/markdown-extractor</code></pre></div><h2 id="✅-usage">✅ Usage</h2>
+<p>Check <a href="./example"><code>example</code></a> for more information.</p>
 <p>Given the sample markdown content, lets see how we can parse it and extract the metadata information</p>
 <div><pre class="line-numbers"><code class="language-md">---
 title: Backend Engineer
@@ -134,7 +139,16 @@ const perks = content[&#39;#perks&#39;];
 // &lt;li&gt;Industry standard salary&lt;/li&gt;
 // &lt;li&gt;Awesome team&lt;/li&gt;
 // &lt;li&gt;Freedom and responsibilities&lt;/li&gt;
-// &lt;/ul&gt;</code></pre></div><h2 id="📌-links">📌 Links</h2>
+// &lt;/ul&gt;</code></pre></div><h2 id="standalone-library-in-browser">Standalone library in browser</h2>
+<div><pre class="line-numbers"><code class="language-html">&lt;script src=&quot;../dist/bundle.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  // ...
+
+  const { metadata, content, html } = MarkdownExtractor.parseMarkdown(markdown, options);
+
+  // ...
+&lt;/script&gt;</code></pre></div><h2 id="📌-links">📌 Links</h2>
 <ul>
 <li><a href="./CHANGELOG.md"><code>Changelog</code></a></li>
 <li><a href="./CONTRIBUTING.md"><code>Contributing</code></a></li>
