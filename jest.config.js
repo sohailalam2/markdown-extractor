@@ -1,0 +1,31 @@
+module.exports = {
+  preset: 'ts-jest',
+  rootDir: 'src',
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  modulePathIgnorePatterns: ['<rootDir>/dist'],
+  transform: { '^.+\\.(t|j)sx?$': 'ts-jest' },
+  globals: { 'ts-jest': { tsConfig: 'tsconfig.json' } },
+  coverageDirectory: '../docs/tests/coverage',
+  collectCoverageFrom: [
+    '**/*.ts',
+    '!**/*.spec.ts',
+    '!**/test/*.ts',
+    '!**/node_modules/**',
+    '!**/coverage/**',
+    '!**/.build/**',
+    '!**/.github/**',
+    '!**/dist/**',
+    '!**/docs/**',
+  ],
+  coveragePathIgnorePatterns: ['index.ts'],
+  coverageThreshold: {
+    global: {
+      statements: 100,
+      branches: 100,
+      functions: 100,
+      lines: 100,
+    },
+  },
+  setupFilesAfterEnv: ['jest-allure/dist/setup'],
+  testEnvironment: 'node',
+};

@@ -1,0 +1,70 @@
+name: Publish Package
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup node v12
+        uses: actions/setup-node@master
+        with:
+          node-version: 12
+
+      - name: Cache
+        uses: actions/cache@master
+        with:
+          path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+
+      - name: Install
+        run: npm ci
+
+      - name: Audit
+        run: npx audit-ci --high
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Test coverage
+        run: npm run test:cov
+        env:
+          CI: true
+
+      # Setup .npmrc file to publish to GitHub Packages
+      - name: Setup for publishing to Github Packages
+        uses: actions/setup-node@master
+        with:
+          node-version: 12
+          registry-url: https://npm.pkg.github.com/
+          scope: '@sohailalam2'
+
+      - name: Publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      # Setup .npmrc file to publish to npm
+      - name: Setup for publishing to NPM Packages
+        uses: actions/setup-node@master
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org
+
+      - name: Publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

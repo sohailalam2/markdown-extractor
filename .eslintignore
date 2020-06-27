@@ -1,0 +1,14 @@
+.dynamodb/
+.serverless/
+.webpack/
+.vscode/
+.idea/
+config/
+dist/
+documentation/
+node_modules/
+coverage/
+allure-results/
+Dockerfile
+.env/
+commitlint.config.js
