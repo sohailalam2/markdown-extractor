@@ -1,12 +1,12 @@
 {
-  "uid" : "e6026d99c1bcce9e",
-  "name" : "should extract metadata",
-  "fullName" : "Metadata Extractor.should extract metadata",
-  "historyId" : "51287704849093711ad53070c28775e1",
+  "uid" : "cffb4a98c2a410b4",
+  "name" : "should be defined",
+  "fullName" : "Metadata Extractor.should be defined",
+  "historyId" : "fb4053c449a49226e67fef86ae08f90a",
   "time" : {
-    "start" : 1593278579073,
-    "stop" : 1593278579087,
-    "duration" : 14
+    "start" : 1593290743719,
+    "stop" : 1593290743725,
+    "duration" : 6
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,7 +23,7 @@
     "value" : "Metadata Extractor"
   }, {
     "name" : "testMethod",
-    "value" : "should extract metadata"
+    "value" : "should be defined"
   }, {
     "name" : "package",
     "value" : "Metadata Extractor"
@@ -33,22 +33,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "c91f1a9df19c1643",
-      "status" : "passed",
-      "time" : {
-        "start" : 1593277081723,
-        "stop" : 1593277081731,
-        "duration" : 8
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "e6026d99c1bcce9e.json",
+  "source" : "cffb4a98c2a410b4.json",
   "parameterValues" : [ ]
 }

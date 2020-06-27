@@ -1,60 +1,60 @@
 [ {
-  "uid" : "a5743f8ac6a54bfc",
+  "uid" : "ae0b6eb2dea6efd4",
   "name" : "should pass without parsing metadata if none exists",
   "time" : {
-    "start" : 1593278579069,
-    "stop" : 1593278579073,
-    "duration" : 4
+    "start" : 1593295143772,
+    "stop" : 1593295143775,
+    "duration" : 3
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6756a6461816d9b9",
-  "name" : "should be defined",
-  "time" : {
-    "start" : 1593278580435,
-    "stop" : 1593278580456,
-    "duration" : 21
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dc2cc12015b5b9e9",
-  "name" : "should be defined",
-  "time" : {
-    "start" : 1593278579058,
-    "stop" : 1593278579069,
-    "duration" : 11
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "92ff5d0c5f5e4dd4",
-  "name" : "should parse markdown as metadata, html and text",
-  "time" : {
-    "start" : 1593278580644,
-    "stop" : 1593278580686,
-    "duration" : 42
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "813a4a454ec956d1",
+  "uid" : "fd5e744fbd881d8e",
   "name" : "should return metadata and html without parsing if selectors are not passed as options",
   "time" : {
-    "start" : 1593278580457,
-    "stop" : 1593278580643,
-    "duration" : 186
+    "start" : 1593295144494,
+    "stop" : 1593295144556,
+    "duration" : 62
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e6026d99c1bcce9e",
+  "uid" : "ecc93c2f122593d",
   "name" : "should extract metadata",
   "time" : {
-    "start" : 1593278579073,
-    "stop" : 1593278579087,
-    "duration" : 14
+    "start" : 1593295143776,
+    "stop" : 1593295143791,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60b2c18f4c36e4c2",
+  "name" : "should parse markdown as metadata, html and text",
+  "time" : {
+    "start" : 1593295144556,
+    "stop" : 1593295144571,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "293e22a828386d9b",
+  "name" : "should be defined",
+  "time" : {
+    "start" : 1593295143765,
+    "stop" : 1593295143772,
+    "duration" : 7
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65871eed1f2e3589",
+  "name" : "should be defined",
+  "time" : {
+    "start" : 1593295144489,
+    "stop" : 1593295144494,
+    "duration" : 5
   },
   "status" : "passed",
   "severity" : "normal"

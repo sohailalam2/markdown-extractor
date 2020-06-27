@@ -65,6 +65,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         </div>
                         <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
                             <li class="link">
+                                <a href="interfaces/CheerioOptionsInterface.html" data-type="entity-link">CheerioOptionsInterface</a>
+                            </li>
+                            <li class="link">
                                 <a href="interfaces/MarkdownDomSelector.html" data-type="entity-link">MarkdownDomSelector</a>
                             </li>
                             <li class="link">

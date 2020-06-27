@@ -1,12 +1,12 @@
 {
-  "uid" : "2d288f4ce724c95f",
-  "name" : "should parse markdown as metadata, html and text",
-  "fullName" : "Markdown Parser.should parse markdown as metadata, html and text",
-  "historyId" : "d8d0ac4aecd806a58fdf17d0410a15a6",
+  "uid" : "f4849afedb8d3608",
+  "name" : "should pass without parsing metadata if none exists",
+  "fullName" : "Metadata Extractor.should pass without parsing metadata if none exists",
+  "historyId" : "41e850a214fe0fb944d3107014f85d2f",
   "time" : {
-    "start" : 1593277083356,
-    "stop" : 1593277083372,
-    "duration" : 16
+    "start" : 1593293742214,
+    "stop" : 1593293742216,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -17,16 +17,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Markdown Parser"
+    "value" : "Metadata Extractor"
   }, {
     "name" : "testClass",
-    "value" : "Markdown Parser"
+    "value" : "Metadata Extractor"
   }, {
     "name" : "testMethod",
-    "value" : "should parse markdown as metadata, html and text"
+    "value" : "should pass without parsing metadata if none exists"
   }, {
     "name" : "package",
-    "value" : "Markdown Parser"
+    "value" : "Metadata Extractor"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -39,6 +39,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2d288f4ce724c95f.json",
+  "source" : "f4849afedb8d3608.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "6756a6461816d9b9",
-  "name" : "should be defined",
-  "fullName" : "Markdown Parser.should be defined",
-  "historyId" : "47f4733c141ff8e43a99b0fce7c2b41a",
+  "uid" : "6beab2b2b5abfb7d",
+  "name" : "should return metadata and html without parsing if selectors are not passed as options",
+  "fullName" : "Markdown Parser.should return metadata and html without parsing if selectors are not passed as options",
+  "historyId" : "3a941fa6d5c1e5951782295e104f54b7",
   "time" : {
-    "start" : 1593278580435,
-    "stop" : 1593278580456,
-    "duration" : 21
+    "start" : 1593290744504,
+    "stop" : 1593290744537,
+    "duration" : 33
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,7 +23,7 @@
     "value" : "Markdown Parser"
   }, {
     "name" : "testMethod",
-    "value" : "should be defined"
+    "value" : "should return metadata and html without parsing if selectors are not passed as options"
   }, {
     "name" : "package",
     "value" : "Markdown Parser"
@@ -33,22 +33,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "6a5f71ed5ba5ef17",
-      "status" : "passed",
-      "time" : {
-        "start" : 1593277083286,
-        "stop" : 1593277083292,
-        "duration" : 6
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6756a6461816d9b9.json",
+  "source" : "6beab2b2b5abfb7d.json",
   "parameterValues" : [ ]
 }

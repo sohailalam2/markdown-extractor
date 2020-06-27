@@ -1,5 +1,5 @@
 {
-  "uid" : "a5743f8ac6a54bfc",
+  "uid" : "c8ace67ac9c79d88",
   "name" : "should pass without parsing metadata if none exists",
   "fullName" : "Metadata Extractor.should pass without parsing metadata if none exists",
   "historyId" : "41e850a214fe0fb944d3107014f85d2f",
@@ -33,22 +33,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "7123d1d755083210",
-      "status" : "passed",
-      "time" : {
-        "start" : 1593277081721,
-        "stop" : 1593277081723,
-        "duration" : 2
-      }
-    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a5743f8ac6a54bfc.json",
+  "source" : "c8ace67ac9c79d88.json",
   "parameterValues" : [ ]
 }

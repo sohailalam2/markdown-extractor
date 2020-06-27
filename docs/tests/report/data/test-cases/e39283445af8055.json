@@ -1,12 +1,12 @@
 {
-  "uid" : "6a5f71ed5ba5ef17",
-  "name" : "should be defined",
-  "fullName" : "Markdown Parser.should be defined",
-  "historyId" : "47f4733c141ff8e43a99b0fce7c2b41a",
+  "uid" : "e39283445af8055",
+  "name" : "should pass without parsing metadata if none exists",
+  "fullName" : "Metadata Extractor.should pass without parsing metadata if none exists",
+  "historyId" : "41e850a214fe0fb944d3107014f85d2f",
   "time" : {
-    "start" : 1593277083286,
-    "stop" : 1593277083292,
-    "duration" : 6
+    "start" : 1593279474126,
+    "stop" : 1593279474128,
+    "duration" : 2
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -17,16 +17,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Markdown Parser"
+    "value" : "Metadata Extractor"
   }, {
     "name" : "testClass",
-    "value" : "Markdown Parser"
+    "value" : "Metadata Extractor"
   }, {
     "name" : "testMethod",
-    "value" : "should be defined"
+    "value" : "should pass without parsing metadata if none exists"
   }, {
     "name" : "package",
-    "value" : "Markdown Parser"
+    "value" : "Metadata Extractor"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -39,6 +39,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6a5f71ed5ba5ef17.json",
+  "source" : "e39283445af8055.json",
   "parameterValues" : [ ]
 }

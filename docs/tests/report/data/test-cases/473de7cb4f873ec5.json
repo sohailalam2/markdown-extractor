@@ -1,12 +1,12 @@
 {
-  "uid" : "c91f1a9df19c1643",
+  "uid" : "473de7cb4f873ec5",
   "name" : "should extract metadata",
   "fullName" : "Metadata Extractor.should extract metadata",
   "historyId" : "51287704849093711ad53070c28775e1",
   "time" : {
-    "start" : 1593277081723,
-    "stop" : 1593277081731,
-    "duration" : 8
+    "start" : 1593278802463,
+    "stop" : 1593278802469,
+    "duration" : 6
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -39,6 +39,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c91f1a9df19c1643.json",
+  "source" : "473de7cb4f873ec5.json",
   "parameterValues" : [ ]
 }
