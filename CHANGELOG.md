@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/sohailalam2/markdown-extractor/compare/v0.1.2...v0.2.0) (2020-06-27)
+
+
+### Features
+
+* add suuport for webpack, bundle library ([d48b5cc](https://github.com/sohailalam2/markdown-extractor/commit/d48b5cc7998de4e9db14ca6c5488f852a497c935))
+
 ### [0.1.2](https://github.com/sohailalam2/markdown-extractor/compare/v0.1.1...v0.1.2) (2020-06-27)
 
 
