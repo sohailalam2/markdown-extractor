@@ -27,8 +27,12 @@
     "node": ">=12"
   },
   "homepage": "https://github.com/sohailalam2/markdown-extractor#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@sohailalam2"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sohailalam2/markdown-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sohailalam2/markdown-extractor/issues"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
