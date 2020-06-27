@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "commonjs",
     "strict": true,
     "pretty": true,
     "declaration": true,
@@ -17,8 +17,8 @@
     "moduleResolution": "node",
     "target": "es5",
     "sourceMap": true,
-    "rootDir": "./src",
     "outDir": "./dist",
+    "rootDir": "./src",
     "baseUrl": "./",
     "noLib": false,
     "lib": ["ESNext", "es2015", "dom"],

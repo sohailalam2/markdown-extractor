@@ -1,4 +1,4 @@
 {
-  "extends": "tsconfig.json",
+  "extends": "./tsconfig.json",
   "exclude": ["node_modules", "docs", ".build", "coverage", "allure-results", "test", "dist", "**/*spec.ts"]
 }
