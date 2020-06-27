@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/sohailalam2/markdown-extractor/compare/v0.1.1...v0.1.2) (2020-06-27)
+
+
+### Bug Fixes
+
+* fix npm publishing ([133bc44](https://github.com/sohailalam2/markdown-extractor/commit/133bc448bac99108b9a251f791dfecf8580995f9))
+
 ### 0.1.1 (2020-06-27)
 
 
