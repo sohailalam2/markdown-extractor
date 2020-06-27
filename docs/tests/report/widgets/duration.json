@@ -1,0 +1,61 @@
+[ {
+  "uid" : "813a4a454ec956d1",
+  "name" : "should return metadata and html without parsing if selectors are not passed as options",
+  "time" : {
+    "start" : 1593278580457,
+    "stop" : 1593278580643,
+    "duration" : 186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc2cc12015b5b9e9",
+  "name" : "should be defined",
+  "time" : {
+    "start" : 1593278579058,
+    "stop" : 1593278579069,
+    "duration" : 11
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6026d99c1bcce9e",
+  "name" : "should extract metadata",
+  "time" : {
+    "start" : 1593278579073,
+    "stop" : 1593278579087,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5743f8ac6a54bfc",
+  "name" : "should pass without parsing metadata if none exists",
+  "time" : {
+    "start" : 1593278579069,
+    "stop" : 1593278579073,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92ff5d0c5f5e4dd4",
+  "name" : "should parse markdown as metadata, html and text",
+  "time" : {
+    "start" : 1593278580644,
+    "stop" : 1593278580686,
+    "duration" : 42
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6756a6461816d9b9",
+  "name" : "should be defined",
+  "time" : {
+    "start" : 1593278580435,
+    "stop" : 1593278580456,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

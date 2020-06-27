@@ -1,0 +1,213 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@sohailalam2/markdown-extractor documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">@sohailalam2/markdown-extractor documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="markdown-extractor-🔣">Markdown Extractor 🔣</h1>
+<p><img src="https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master" alt="Build &amp; Test" class="img-responsive"></p>
+<h2 id="📝-description">📝 Description</h2>
+<p>Your one stop for parsing Markdown content. Give your markdown superpower by adding metadata.</p>
+<h2 id="🔧-features">🔧 Features</h2>
+<ul>
+<li>Parse markdown content. We use <a href="https://github.com/markedjs/marked">marked</a></li>
+<li>Extract YAML metadata information about your markdown content. We use <a href="https://github.com/nodeca/js-yaml">js-yaml</a></li>
+<li>Convert markdown to HTML and easily extract data from DOM nodes by passing selectors. We use <a href="https://github.com/cheeriojs/cheerio">cheerio</a></li>
+</ul>
+<h2 id="💡-how-does-it-work">💡 How does it work?</h2>
+<p>For example,</p>
+<div><pre class="line-numbers"><code class="language-md">---
+title: Awesome Markdown Extractor
+id: 101
+---
+
+# Abstract
+
+Lorem ipsum dolor...</code></pre></div><p>would be parsed as</p>
+<div><pre class="line-numbers"><code class="language-js">{
+  metadata: {
+    title: &quot;Awesome Markdown Extractor&quot;,
+    id: 101
+  },
+  content: {
+    abstract: &#39;Abstract&#39;
+  },
+  html: &quot;&lt;h1&gt;Abstract&lt;/h1&gt;....&quot;
+}</code></pre></div><h2 id="📝-prerequisites">📝 Prerequisites</h2>
+<p>NodeJs v12 or above. May work on lower version but not tested.</p>
+<h2 id="💻-installation">💻 Installation</h2>
+<div><pre class="line-numbers"><code class="language-bash">$ npm install &#64;sohailalam2/markdown-extractor</code></pre></div><h2 id="✅-usage">✅ Usage</h2>
+<p>Given the sample markdown content, lets see how we can parse it and extract the metadata information</p>
+<div><pre class="line-numbers"><code class="language-md">---
+title: Backend Engineer
+id: 101
+locations: [India, Remote]
+department: Engineering
+publishDate: 2020-06-27T13:53:26.714Z
+tags: [NodeJs, AWS, Serverless, TypeScript]
+isDraft: true
+---
+
+# Backend Engineer
+
+## Abstract
+
+This is the awesome _abstract_ for the **backend engineering** role. Visit https://github.com to checkout our brand and some amazing content.
+
+## Preferred Qualifications
+
+- AWS experience
+- Serverless experience
+
+## Perks
+
+- Industry standard salary
+- Awesome team
+- Freedom and responsibilities
+
+## Other Details
+
+This is an **amazing** opportunity for _budding engineers_. Apply now!!</code></pre></div><div><pre class="line-numbers"><code class="language-js">const fs = require(&#39;fs&#39;);
+const path = require(&#39;path&#39;);
+
+const { parseMarkdown } = require(&#39;../dist&#39;);
+
+const markdown = fs.readFileSync(path.join(__dirname, &#39;job-backend-engineer.md&#39;), &#39;utf8&#39;);
+
+const options = {
+  selectors: [
+    { selector: &#39;#abstract&#39;, parseHtml: true },
+    { selector: &#39;#preferred-qualifications&#39; },
+    { selector: &#39;#perks&#39;, parseHtml: true },
+  ],
+};
+
+const { metadata, content, html } = parseMarkdown(markdown, options);
+
+// metadata:
+//
+// {
+//   title: &#39;Backend Engineer&#39;,
+//   id: 101,
+//   locations: [ &#39;India&#39;, &#39;Remote&#39; ],
+//   department: &#39;Engineering&#39;,
+//   publishDate: 2020-06-27T13:53:26.714Z,
+//   tags: [ &#39;NodeJs&#39;, &#39;AWS&#39;, &#39;Serverless&#39;, &#39;TypeScript&#39; ],
+//   isDraft: true
+// }
+
+const abstract = content[&#39;#abstract&#39;];
+// &lt;p&gt;This is the awesome &lt;em&gt;abstract&lt;/em&gt; for the &lt;strong&gt;backend engineering&lt;/strong&gt; role. Visit &lt;a href=&quot;https://github.com&quot;&gt;https://github.com&lt;/a&gt; to checkout our brand and some amazing content.&lt;/p&gt;
+
+const preferredQualifications = content[&#39;#preferred-qualifications&#39;].split(&#39;\n&#39;);
+// [ &#39;AWS experience&#39;, &#39;Serverless experience&#39; ]
+
+const perks = content[&#39;#perks&#39;];
+
+// &lt;ul&gt;
+// &lt;li&gt;Industry standard salary&lt;/li&gt;
+// &lt;li&gt;Awesome team&lt;/li&gt;
+// &lt;li&gt;Freedom and responsibilities&lt;/li&gt;
+// &lt;/ul&gt;</code></pre></div><h2 id="📌-links">📌 Links</h2>
+<ul>
+<li><a href="./CHANGELOG.md"><code>Changelog</code></a></li>
+<li><a href="./CONTRIBUTING.md"><code>Contributing</code></a></li>
+<li><a href="https://sohailalam2.github.io/markdown-extractor/">Annotated code documentation</a></li>
+<li><a href="https://sohailalam2.github.io/markdown-extractor/tests/coverage/lcov-report">Test Coverage</a></li>
+<li><a href="https://sohailalam2.github.io/markdown-extractor/tests/report">Allure Report</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jun 27 19:23:00 CEST 2020","Sat Jun 27 19:23:00 CEST 2020","186","","Markdown Parser","","Markdown Parser","should return metadata and html without parsing if selectors are not passed as options","should return metadata and html without parsing if selectors are not passed as options",""
+"passed","Sat Jun 27 19:22:59 CEST 2020","Sat Jun 27 19:22:59 CEST 2020","11","","Metadata Extractor","","Metadata Extractor","should be defined","should be defined",""
+"passed","Sat Jun 27 19:22:59 CEST 2020","Sat Jun 27 19:22:59 CEST 2020","14","","Metadata Extractor","","Metadata Extractor","should extract metadata","should extract metadata",""
+"passed","Sat Jun 27 19:22:59 CEST 2020","Sat Jun 27 19:22:59 CEST 2020","4","","Metadata Extractor","","Metadata Extractor","should pass without parsing metadata if none exists","should pass without parsing metadata if none exists",""
+"passed","Sat Jun 27 19:23:00 CEST 2020","Sat Jun 27 19:23:00 CEST 2020","42","","Markdown Parser","","Markdown Parser","should parse markdown as metadata, html and text","should parse markdown as metadata, html and text",""
+"passed","Sat Jun 27 19:23:00 CEST 2020","Sat Jun 27 19:23:00 CEST 2020","21","","Markdown Parser","","Markdown Parser","should be defined","should be defined",""

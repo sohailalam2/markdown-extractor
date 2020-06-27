@@ -3,7 +3,7 @@ name: Publish Package
 on:
   push:
     tags:
-      - v*
+      - 'v*'
 
 jobs:
   build:
@@ -44,8 +44,23 @@ jobs:
         env:
           CI: true
 
-      # Setup .npmrc file to publish to GitHub Packages
-      - name: Setup for publishing to Github Packages
+      # Publish to NPMJS Registry
+      - name: Setup for publishing to NPM Registry
+        uses: actions/setup-node@master
+        with:
+          node-version: 12
+          registry-url: 'https://registry.npmjs.org/'
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+          npm config set scope "@sohailalam2"
+          npm config list
+          npm publish --access public
+        env:
+          CI: true
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      # Publish to GitHub Package Registry
+      - name: Setup for publishing to GitHub Package Registry
         uses: actions/setup-node@master
         with:
           node-version: 12
@@ -56,15 +71,3 @@ jobs:
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      # Setup .npmrc file to publish to npm
-      - name: Setup for publishing to NPM Packages
-        uses: actions/setup-node@master
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org
-
-      - name: Publish
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
