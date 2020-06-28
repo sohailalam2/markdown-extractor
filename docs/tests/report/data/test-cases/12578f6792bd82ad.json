@@ -1,0 +1,182 @@
+{
+  "uid" : "12578f6792bd82ad",
+  "name" : "should be defined",
+  "fullName" : "Metadata Extractor.should be defined",
+  "historyId" : "fb4053c449a49226e67fef86ae08f90a",
+  "time" : {
+    "start" : 1593334748150,
+    "stop" : 1593334748155,
+    "duration" : 5
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "testClass",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "testMethod",
+    "value" : "should be defined"
+  }, {
+    "name" : "package",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6c858966014eb23c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593298233028,
+        "stop" : 1593298233036,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "5b1b2a6ac0bcae43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593298088878,
+        "stop" : 1593298088883,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "68019d503387dd11",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593297988918,
+        "stop" : 1593297988922,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "f36aadfa511651fe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593297888263,
+        "stop" : 1593297888274,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "b564253e208179d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593297559550,
+        "stop" : 1593297559557,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "8453136c9e87cc53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593297262062,
+        "stop" : 1593297262068,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "fa2bdb166c59120",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593295303121,
+        "stop" : 1593295303127,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "a03921aaf9b4765c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593295143765,
+        "stop" : 1593295143772,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "cbf09bb751fcd34c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593293742209,
+        "stop" : 1593293742214,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "49ff4df010ca4b63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593293616910,
+        "stop" : 1593293616916,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "494ef16c99ecf32a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593291545130,
+        "stop" : 1593291545134,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "1775f5c94312ab47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593291190632,
+        "stop" : 1593291190638,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "ad8529cc54329369",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593290743719,
+        "stop" : 1593290743725,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "eb76100231d175de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593279474121,
+        "stop" : 1593279474126,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "11bfc8c73c89a3b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593278802456,
+        "stop" : 1593278802461,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "11008da4a0b625b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593278579058,
+        "stop" : 1593278579069,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "9c164d7dad8df130",
+      "status" : "passed",
+      "time" : {
+        "start" : 1593277081715,
+        "stop" : 1593277081721,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "12578f6792bd82ad.json",
+  "parameterValues" : [ ]
+}

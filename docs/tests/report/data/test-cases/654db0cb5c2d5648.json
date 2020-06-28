@@ -1,0 +1,44 @@
+{
+  "uid" : "654db0cb5c2d5648",
+  "name" : "should extract metadata",
+  "fullName" : "Metadata Extractor.should extract metadata",
+  "historyId" : "51287704849093711ad53070c28775e1",
+  "time" : {
+    "start" : 1593290743727,
+    "stop" : 1593290743735,
+    "duration" : 8
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "testClass",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "testMethod",
+    "value" : "should extract metadata"
+  }, {
+    "name" : "package",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "654db0cb5c2d5648.json",
+  "parameterValues" : [ ]
+}

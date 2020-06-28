@@ -1,0 +1,44 @@
+{
+  "uid" : "21a8770df52076b8",
+  "name" : "should return metadata and html without parsing if selectors are not passed as options",
+  "fullName" : "Markdown Parser.should return metadata and html without parsing if selectors are not passed as options",
+  "historyId" : "3a941fa6d5c1e5951782295e104f54b7",
+  "time" : {
+    "start" : 1593298232021,
+    "stop" : 1593298232086,
+    "duration" : 65
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "testClass",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "testMethod",
+    "value" : "should return metadata and html without parsing if selectors are not passed as options"
+  }, {
+    "name" : "package",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21a8770df52076b8.json",
+  "parameterValues" : [ ]
+}

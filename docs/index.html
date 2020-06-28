@@ -30,15 +30,20 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h1 id="markdown-extractor-🔣">Markdown Extractor 🔣</h1>
-<p><a href="https://www.npmjs.com/package/@sohailalam2/markdown-extractor"><img src="https://badgen.net/npm/v/@sohailalam2/markdown-extractor?icon=npm" alt="npm" class="img-responsive"></a>
+<h1 align="center">Markdown Extractor 🔣</h1>
+<h5 align="center">Your one stop for parsing Markdown content. Give your markdown superpower by adding metadata.</h5>
+
+<div align="center">
+
+<p><a href="https://codeclimate.com/github/sohailalam2/markdown-extractor/maintainability"><img src="https://api.codeclimate.com/v1/badges/e5cb09b9bff5b857a673/maintainability" alt="Maintainability" class="img-responsive"></a>
+<a href="https://www.npmjs.com/package/@sohailalam2/markdown-extractor"><img src="https://badgen.net/npm/v/@sohailalam2/markdown-extractor?icon=npm" alt="npm" class="img-responsive"></a>
 <a href="https://github.com/sohailalam2/markdown-extractor/actions"><img src="https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master" alt="github actions" class="img-responsive"></a>
 <a href="https://cdn.jsdelivr.net/npm/@sohailalam2/markdown-extractor/dist/bundle.min.js"><img src="https://badgen.net/badgesize/gzip/https://cdn.jsdelivr.net/npm/@sohailalam2/markdown-extractor/dist/bundle.min.js" alt="gzip size" class="img-responsive"></a>
 <a href="https://packagephobia.now.sh/result?p=@sohailalam2/markdown-extractor"><img src="https://badgen.net/packagephobia/install/@sohailalam2/markdown-extractor?icon=packagephobia" alt="install size" class="img-responsive"></a>
 <a href="https://snyk.io/test/npm/@sohailalam2/markdown-extractor"><img src="https://snyk.io/test/npm/@sohailalam2/markdown-extractor/badge.svg" alt="snyk" class="img-responsive"></a></p>
-<h2 id="📝-description">📝 Description</h2>
-<p>Your one stop for parsing Markdown content. Give your markdown superpower by adding metadata.</p>
-<h2 id="🔧-features">🔧 Features</h2>
+</div>
+
+<h2 id="📢-features">📢 Features</h2>
 <ul>
 <li>Parse markdown content. We use <a href="https://github.com/markedjs/marked">marked</a></li>
 <li>Extract YAML metadata information about your markdown content. We use <a href="https://github.com/nodeca/js-yaml">js-yaml</a></li>
@@ -103,7 +108,7 @@ This is the awesome _abstract_ for the **backend engineering** role. Visit https
 This is an **amazing** opportunity for _budding engineers_. Apply now!!</code></pre></div><div><pre class="line-numbers"><code class="language-js">const fs = require(&#39;fs&#39;);
 const path = require(&#39;path&#39;);
 
-const { parseMarkdown } = require(&#39;../dist&#39;);
+const { parseMarkdown } = require(&#39;&#64;sohailalam2/markdown-extractor&#39;);
 
 const markdown = fs.readFileSync(path.join(__dirname, &#39;job-backend-engineer.md&#39;), &#39;utf8&#39;);
 
@@ -150,7 +155,29 @@ const perks = content[&#39;#perks&#39;];
   const { metadata, content, html } = MarkdownExtractor.parseMarkdown(markdown, options);
 
   // ...
-&lt;/script&gt;</code></pre></div><h2 id="📌-links">📌 Links</h2>
+&lt;/script&gt;</code></pre></div><h2 id="🔨-configuration-options">🔨 Configuration Options</h2>
+<p>The <code>parseMarkdown</code> function takes one required parameter (markdown as string) and an optional parameter for configuring the parser:</p>
+<div><pre class="line-numbers"><code class="language-ts">function parseMarkdown(data: string, options?: MarkdownExtractorOptions): MarkdownExtractorResult {}</code></pre></div><p>The various options and its effects are described as below:</p>
+<h3 id="optionsmetadatadelimiter">options.metadataDelimiter</h3>
+<p>The delimiter boundary that holds the metadata content. It defaults to <code>---</code>.</p>
+<p>Example:</p>
+<div><pre class="line-numbers"><code class="language-md">---
+title: Awesome Markdown Extractor
+id: 101
+---</code></pre></div><h3 id="optionsselectors">options.selectors</h3>
+<p>This is an array of <code>MarkdownDomSelector</code> containing two properties. If provided, the parser will parse the markdown to HTML and also selectively extract data out of the DOM elements selected by the provided selectors.</p>
+<ul>
+<li><code>selector</code> (string) is a jQuery style DOM selector</li>
+<li><code>parseHtml</code> (boolean, optional) indicating whether to extract the content of the selected DOM element as HTML or as Text. Defaults to text.</li>
+</ul>
+<p>Example:</p>
+<div><pre class="line-numbers"><code class="language-js">const selectors = [
+  { selector: &#39;#abstract&#39;, parseHtml: true },
+  { selector: &#39;#preferred-qualifications&#39; },
+  { selector: &#39;#perks&#39;, parseHtml: true },
+];</code></pre></div><h3 id="optionscheeriooptions">options.cheerioOptions</h3>
+<p>Internally we use <a href="https://github.com/cheeriojs/cheerio">cheerio</a> to parse the HTML content and extract data using DOM selectors. You can optionally configure its behavior using this parameter. Read more <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/cheerio/index.d.ts#L226">here</a></p>
+<h2 id="📌-links">📌 Links</h2>
 <ul>
 <li><a href="./CHANGELOG.md"><code>Changelog</code></a></li>
 <li><a href="./CONTRIBUTING.md"><code>Contributing</code></a></li>

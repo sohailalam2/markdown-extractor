@@ -1,16 +1,18 @@
-# Markdown Extractor 🔣
+<h1 align="center">Markdown Extractor</h1>
+<h5 align="center">Your one stop for parsing Markdown content. Give your markdown superpower by adding metadata.</h5>
 
+<div align="center">
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/e5cb09b9bff5b857a673/maintainability)](https://codeclimate.com/github/sohailalam2/markdown-extractor/maintainability)
 [![npm](https://badgen.net/npm/v/@sohailalam2/markdown-extractor?icon=npm)](https://www.npmjs.com/package/@sohailalam2/markdown-extractor)
 [![github actions](https://github.com/sohailalam2/markdown-extractor/workflows/Build%20&%20Test/badge.svg?branch=master)](https://github.com/sohailalam2/markdown-extractor/actions)
 [![gzip size](https://badgen.net/badgesize/gzip/https://cdn.jsdelivr.net/npm/@sohailalam2/markdown-extractor/dist/bundle.min.js)](https://cdn.jsdelivr.net/npm/@sohailalam2/markdown-extractor/dist/bundle.min.js)
 [![install size](https://badgen.net/packagephobia/install/@sohailalam2/markdown-extractor?icon=packagephobia)](https://packagephobia.now.sh/result?p=@sohailalam2/markdown-extractor)
 [![snyk](https://snyk.io/test/npm/@sohailalam2/markdown-extractor/badge.svg)](https://snyk.io/test/npm/@sohailalam2/markdown-extractor)
 
-## 📝 Description
+</div>
 
-Your one stop for parsing Markdown content. Give your markdown superpower by adding metadata.
-
-## 🔧 Features
+## 📢 Features
 
 - Parse markdown content. We use [marked](https://github.com/markedjs/marked)
 - Extract YAML metadata information about your markdown content. We use [js-yaml](https://github.com/nodeca/js-yaml)
@@ -47,10 +49,6 @@ would be parsed as
   html: "<h1>Abstract</h1>...."
 }
 ```
-
-## 📝 Prerequisites
-
-NodeJs v12 or above. May work on lower version but not tested.
 
 ## 💻 Installation
 
@@ -101,7 +99,7 @@ This is an **amazing** opportunity for _budding engineers_. Apply now!!
 const fs = require('fs');
 const path = require('path');
 
-const { parseMarkdown } = require('../dist');
+const { parseMarkdown } = require('@sohailalam2/markdown-extractor');
 
 const markdown = fs.readFileSync(path.join(__dirname, 'job-backend-engineer.md'), 'utf8');
 
@@ -142,7 +140,7 @@ const perks = content['#perks'];
 // </ul>
 ```
 
-## Standalone library in browser
+## 🌍 Standalone library for the browser
 
 ```html
 <script src="../dist/bundle.min.js"></script>
@@ -155,6 +153,50 @@ const perks = content['#perks'];
   // ...
 </script>
 ```
+
+## 🔨 Configuration Options
+
+The `parseMarkdown` function takes one required parameter (markdown as string) and an optional parameter for configuring the parser:
+
+```ts
+function parseMarkdown(data: string, options?: MarkdownExtractorOptions): MarkdownExtractorResult {}
+```
+
+The various options and its effects are described as below:
+
+### options.metadataDelimiter
+
+The delimiter boundary that holds the metadata content. It defaults to `---`.
+
+Example:
+
+```md
+---
+title: Awesome Markdown Extractor
+id: 101
+---
+```
+
+### options.selectors
+
+This is an array of `MarkdownDomSelector` containing two properties. If provided, the parser will parse the markdown to HTML and also selectively extract data out of the DOM elements selected by the provided selectors.
+
+- `selector` (string) is a jQuery style DOM selector
+- `parseHtml` (boolean, optional) indicating whether to extract the content of the selected DOM element as HTML or as Text. Defaults to text.
+
+Example:
+
+```js
+const selectors = [
+  { selector: '#abstract', parseHtml: true },
+  { selector: '#preferred-qualifications' },
+  { selector: '#perks', parseHtml: true },
+];
+```
+
+### options.cheerioOptions
+
+Internally we use [cheerio](https://github.com/cheeriojs/cheerio) to parse the HTML content and extract data using DOM selectors. You can optionally configure its behavior using this parameter. Read more [here](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/cheerio/index.d.ts#L226)
 
 ## 📌 Links
 

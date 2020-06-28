@@ -21,9 +21,9 @@
     "posttest": "allure generate --clean --output docs/tests/report",
     "test:unit": "npm run test:clear && jest --detectOpenHandles",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage --coverageDirectory ../coverage",
+    "test:cov": "jest --runInBand --detectOpenHandles --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --runInBand --detectOpenHandles --config ./test/jest-e2e.json"
   },
   "engines": {
     "node": ">=12"

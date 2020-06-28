@@ -1,0 +1,44 @@
+{
+  "uid" : "cfb821209f44a2b9",
+  "name" : "should parse markdown as metadata, html and text",
+  "fullName" : "Markdown Parser.should parse markdown as metadata, html and text",
+  "historyId" : "d8d0ac4aecd806a58fdf17d0410a15a6",
+  "time" : {
+    "start" : 1593297558590,
+    "stop" : 1593297558620,
+    "duration" : 30
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "testClass",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "testMethod",
+    "value" : "should parse markdown as metadata, html and text"
+  }, {
+    "name" : "package",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cfb821209f44a2b9.json",
+  "parameterValues" : [ ]
+}

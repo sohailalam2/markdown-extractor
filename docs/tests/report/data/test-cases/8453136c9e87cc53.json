@@ -1,0 +1,44 @@
+{
+  "uid" : "8453136c9e87cc53",
+  "name" : "should be defined",
+  "fullName" : "Metadata Extractor.should be defined",
+  "historyId" : "fb4053c449a49226e67fef86ae08f90a",
+  "time" : {
+    "start" : 1593297262062,
+    "stop" : 1593297262068,
+    "duration" : 6
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "testClass",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "testMethod",
+    "value" : "should be defined"
+  }, {
+    "name" : "package",
+    "value" : "Metadata Extractor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8453136c9e87cc53.json",
+  "parameterValues" : [ ]
+}

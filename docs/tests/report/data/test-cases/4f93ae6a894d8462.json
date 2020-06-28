@@ -1,0 +1,44 @@
+{
+  "uid" : "4f93ae6a894d8462",
+  "name" : "should be defined",
+  "fullName" : "Markdown Parser.should be defined",
+  "historyId" : "47f4733c141ff8e43a99b0fce7c2b41a",
+  "time" : {
+    "start" : 1593279474638,
+    "stop" : 1593279474642,
+    "duration" : 4
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "testClass",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "testMethod",
+    "value" : "should be defined"
+  }, {
+    "name" : "package",
+    "value" : "Markdown Parser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4f93ae6a894d8462.json",
+  "parameterValues" : [ ]
+}
