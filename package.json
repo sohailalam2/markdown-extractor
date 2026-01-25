@@ -37,7 +37,7 @@
     "url": "https://github.com/sohailalam2/markdown-extractor/issues"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0",
     "js-yaml": "^3.14.0",
     "marked": "^1.1.0"
   },
